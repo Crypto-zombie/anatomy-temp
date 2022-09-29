@@ -1,0 +1,38 @@
+.wrapper{
+  @apply flex justify-center h-8 w-auto;
+  .animateEffect{
+    @apply animate-ping hover:hidden absolute inline-flex h-full w-full rounded-full opacity-75;
+    &.sky{
+      @apply bg-sky-400;
+    }
+    &.green{
+      @apply bg-green-400;
+    }
+    &.steel{
+      @apply bg-cyan-400
+    }
+  }
+  .button{
+    @apply relative inline-flex justify-center items-center text-white  rounded-full text-center h-8 w-8 hover:w-16 ;
+    &:hover {
+      .info {
+        @apply block;
+      }
+    }
+    &.sky{
+      @apply bg-sky-600;
+    }
+    &.green{
+      @apply bg-green-700;
+    }
+    &.steel{
+      @apply bg-cyan-700
+    }
+    .symbol{
+      @apply text-xl;
+    }
+    .info{
+      @apply hidden;
+    }
+  }
+}
